@@ -10,22 +10,22 @@
         }
     },
     "display": {
-        "color": {
-            "title": "#ffffff"
-        },
         "key": {
             "width": 13
         },
+        "percent": {
+            "type": 3
+        },
         "bar": {
-            "width": 12,
-            "char": {
-                "elapsed": "=",
-                "total": "-"
-            }
+            "width": 12
         }
     },
     "modules": [
-        "title",
+        {
+            "type": "command",
+            "key": " ",
+            "text": "echo \"${PRIVACY_PROTECTED_USERNAME:-$(whoami)}@${PRIVACY_PROTECTED_HOSTNAME:-$(hostname -s)}\""
+        },
         "separator",
         {
             "type": "os",
@@ -99,6 +99,7 @@
             "type": "battery",
             "key": "╰ Battery",
             "keyColor": "#0080ff",
+            "percent": { "type": ["num", "bar"] },
             "format": "{capacity-bar} {capacity}"
         },
         "colors"
