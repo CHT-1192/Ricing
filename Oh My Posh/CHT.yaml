@@ -75,4 +75,4 @@ blocks:
         foreground: "p:white"
         template: "{{ .CurrentDate | date .Format }}"
         options:
-          time_format: "21:09"
+          time_format: "15:04"

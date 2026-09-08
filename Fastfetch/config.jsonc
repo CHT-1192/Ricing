@@ -99,7 +99,6 @@
             "type": "battery",
             "key": "╰ Battery",
             "keyColor": "#0080ff",
-            "percent": { "type": ["num", "bar"] },
             "format": "{capacity-bar} {capacity}"
         },
         "colors"
