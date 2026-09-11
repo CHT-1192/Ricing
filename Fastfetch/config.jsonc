@@ -17,7 +17,12 @@
             "type": 3
         },
         "bar": {
-            "width": 12
+            "width": 12,
+            "color": null,
+            "border": {
+                "left": "◖",
+                "right": "◗"
+            }
         }
     },
     "modules": [
