@@ -10,7 +10,7 @@ palette:
   light_blue: "#00FFFF"
   white: "#FFFFFF"
   red: "#FF0000"
-  text: "#101020"   # Use you terminal's background color
+  text: "#080818"   # Use you terminal's background color
 
 
 blocks:

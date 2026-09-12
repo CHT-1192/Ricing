@@ -11,7 +11,7 @@
     },
     "display": {
         "key": {
-            "width": 13
+            "width": 24
         },
         "percent": {
             "type": 3
@@ -19,6 +19,9 @@
         "bar": {
             "width": 12,
             "color": null,
+            "char": {
+                "total": " "
+            },
             "border": {
                 "left": "◖",
                 "right": "◗"
@@ -29,7 +32,8 @@
         {
             "type": "command",
             "key": " ",
-            "text": "echo \"${PRIVACY_PROTECTED_USERNAME:-$(whoami)}@${PRIVACY_PROTECTED_HOSTNAME:-$(hostname -s)}\""
+            "text": "echo \"${PRIVACY_PROTECTED_USERNAME:-$(whoami)}@${PRIVACY_PROTECTED_HOSTNAME:-$(hostname -s)}\"",
+            "format": "{#1}{result}{#}"
         },
         "separator",
         {
